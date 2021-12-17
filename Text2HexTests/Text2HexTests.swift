@@ -10,27 +10,48 @@ import XCTest
 
 class Text2HexTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testEmptyString() {
+        let string = ""
+        let hex = ""
+      
+       try XCTAssertEqual(convertToHex(str: string), hex)
+       
     }
+    
+    func testZero() {
+        let hex = "0"
+        XCTAssertEqual(convertToHex(number: 0), hex)
+    }
+   
+    func testNumberLessThan16() {
+        let hex = "F"
+      XCTAssertEqual(convertToHex(number: 15), hex)
+    }
+    
+    func testNumberMoreThan16() {
+        let hex = "11"
+       XCTAssertEqual(convertToHex(number: 17), hex)
+    }
+    
+    
+    func testAString() {
+        let string = "A"
+        let hex = "41"
+        try XCTAssertEqual(convertToHex(str: string), hex)
+    }
+    
+    func testHelloString() {
+        let string = "hello"
+        let hex = "68656C6C6F"
+        try XCTAssertEqual(convertToHex(str: string), hex)
+    }
+    
+    func testSpaceString() {
+        let string = "   "
+        let hex = "202020"
+        try XCTAssertEqual(convertToHex(str: string), hex)
+    }
+    
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
 
 }

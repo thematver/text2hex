@@ -14,6 +14,11 @@
 		8869D52F276D17F1005AE556 /* Text2HexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8869D52E276D17F1005AE556 /* Text2HexTests.swift */; };
 		8869D539276D17F1005AE556 /* Text2HexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8869D538276D17F1005AE556 /* Text2HexUITests.swift */; };
 		8869D53B276D17F1005AE556 /* Text2HexUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8869D53A276D17F1005AE556 /* Text2HexUITestsLaunchTests.swift */; };
+		8869D548276D1F73005AE556 /* Text2Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8869D547276D1F73005AE556 /* Text2Hex.swift */; };
+		8869D54A276D22A7005AE556 /* ConvertationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8869D549276D22A7005AE556 /* ConvertationError.swift */; };
+		8869D54C276D2582005AE556 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8869D54B276D2582005AE556 /* Stack.swift */; };
+		8869D54E276D333D005AE556 /* NumberSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8869D54D276D333D005AE556 /* NumberSystem.swift */; };
+		8869D554276D399F005AE556 /* .gitignore.s in Sources */ = {isa = PBXBuildFile; fileRef = 8869D553276D399F005AE556 /* .gitignore.s */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		8869D534276D17F1005AE556 /* Text2HexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Text2HexUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8869D538276D17F1005AE556 /* Text2HexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text2HexUITests.swift; sourceTree = "<group>"; };
 		8869D53A276D17F1005AE556 /* Text2HexUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text2HexUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8869D547276D1F73005AE556 /* Text2Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text2Hex.swift; sourceTree = "<group>"; };
+		8869D549276D22A7005AE556 /* ConvertationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertationError.swift; sourceTree = "<group>"; };
+		8869D54B276D2582005AE556 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		8869D54D276D333D005AE556 /* NumberSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSystem.swift; sourceTree = "<group>"; };
+		8869D553276D399F005AE556 /* .gitignore.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = .gitignore.s; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,7 @@
 		8869D511276D17EF005AE556 = {
 			isa = PBXGroup;
 			children = (
+				8869D553276D399F005AE556 /* .gitignore.s */,
 				8869D51C276D17EF005AE556 /* Text2Hex */,
 				8869D52D276D17F1005AE556 /* Text2HexTests */,
 				8869D537276D17F1005AE556 /* Text2HexUITests */,
@@ -94,7 +105,9 @@
 		8869D51C276D17EF005AE556 /* Text2Hex */ = {
 			isa = PBXGroup;
 			children = (
+				8869D555276D39D9005AE556 /* Structures */,
 				8869D51D276D17EF005AE556 /* Text2HexApp.swift */,
+				8869D547276D1F73005AE556 /* Text2Hex.swift */,
 				8869D51F276D17EF005AE556 /* ContentView.swift */,
 				8869D521276D17F0005AE556 /* Assets.xcassets */,
 				8869D523276D17F0005AE556 /* Preview Content */,
@@ -125,6 +138,16 @@
 				8869D53A276D17F1005AE556 /* Text2HexUITestsLaunchTests.swift */,
 			);
 			path = Text2HexUITests;
+			sourceTree = "<group>";
+		};
+		8869D555276D39D9005AE556 /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				8869D549276D22A7005AE556 /* ConvertationError.swift */,
+				8869D54B276D2582005AE556 /* Stack.swift */,
+				8869D54D276D333D005AE556 /* NumberSystem.swift */,
+			);
+			path = Structures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8869D54A276D22A7005AE556 /* ConvertationError.swift in Sources */,
+				8869D54C276D2582005AE556 /* Stack.swift in Sources */,
+				8869D548276D1F73005AE556 /* Text2Hex.swift in Sources */,
+				8869D554276D399F005AE556 /* .gitignore.s in Sources */,
+				8869D54E276D333D005AE556 /* NumberSystem.swift in Sources */,
 				8869D520276D17EF005AE556 /* ContentView.swift in Sources */,
 				8869D51E276D17EF005AE556 /* Text2HexApp.swift in Sources */,
 			);
